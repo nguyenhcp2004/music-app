@@ -29,6 +29,8 @@ export const create = async (req: Request, res: Response) => {
     status: "active"
   }).select("fullName");
 
+  console.log(singers)
+
   res.render("admin/pages/songs/create", {
     pageTitle: "Thêm mới bài hát",
     topics: topics,
